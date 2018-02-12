@@ -1,0 +1,49 @@
+
+{% extends "base.html" %}
+    
+{% block main %}
+    
+<html>    
+<body>   
+    <div class = "c1">
+        <div id="img">
+            <img src = "{{url_for('static', filename = 'profile pic yh.jpg')}}"/>
+        </div>
+        
+        
+        <div><h1>Roshaine Scott </h1></div>
+        <div id="user">
+            <h5>@scvtt</h5>
+            <h4>Kingston, Jamaica</h4>
+            <h4>{{formatted_date}}</h4>
+        </div>
+        
+    </div>
+    
+    <div class="c2">
+    
+        <div id="para"><p>I am very observant and aware of my surroundings. I am also the king of reading people.</p></div>
+     
+            
+        <div id = "left">
+            <h5><strong>89</strong></h5>
+            <label class = "labels">Posts</label>
+        </div>
+
+        <div id = "center">
+            <h5><strong>187</strong></h5>
+            <label class = "labels">Following</label>
+        </div>
+        
+        <div id = "right">
+            <h5><strong>1000</strong></h5>
+            <label class = "labels">Followers</label>
+        </div>
+        
+    
+        <div id ="button"><button id ='value'>Follow</button></div>
+    </div>
+</body>
+ 
+</html>
+{% endblock %}
